@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <a href=""><img src="./img/sedona/svg/logo.svg" alt="LOGO"></a>
+            <nav>
+                <ul>
+                    <li><a href="./blank.html">ИНФОРМАЦИЯ</a></li>
+                    <li><a href="./blank.html">ФОТО И ВИДЕО</a></li>
+                    <li><a href="./blank.html">КАРТА ШТАТА</a></li>
+                    <li><a href="./blank.html">ГОСТИНИЦЫ</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="filter">
+
+            <form action="">
+                <fieldset>
+                    <legend>
+                        <h2>Фильтр жилья</h2>
+                    </legend>
+                    <div>
+                        <p>Инфраструктура</p>
+                        <div>
+                            <input type="checkbox" name="infrastucture" id="sweeming_pool" checked>
+                            <label for="sweeming_pool">Бассейн</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="infrastucture" id="parking">
+                            <label for="parking">Парковка</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="infrastucture" id="wifi">
+                            <label for="wifi">Wi-fi</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Тип жилья</p>
+                        <div>
+                            <input type="checkbox" name="apartment type" id="hotel" checked>
+                            <label for="hotel">Гостиница</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="apartment type" id="motel" checked>
+                            <label for="motel">Мотель</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="apartment type" id="apartment" checked>
+                            <label for="apartment">Апартаменты</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Стоимость в сутки (р):</p>
+                        <div>
+                            <input type="number" placeholder="от 0">
+                            <input type="number" placeholder="до 3000">
+                        </div>
+                        <input type="range" min="0" max="3000" step="1" value="0">
+                    </div>
+                    <input type="submit" value="Показать">
+
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Найденые варианты</h2>
+            <div>
+                <span>Найдено:</span><span>3</span>
+                <p>Сортировка:</p>
+                <input type="radio" name="sort" id="by price">
+                <label for="by price">По цене</label>
+                <input type="radio" name="sort" id="by type">
+                <label for="by type">По типу</label>
+                <input type="radio" name="sort" id="by rate">
+                <label for="by rate">По рейтингу</label>
+
+                <button><img src="./img/sedona/svg/icon-up-dir.svg" alt="Сортировать по возрастанию"></button>
+                <button><img src="./img/sedona/svg/icon-down-dir.svg" alt="Сортировать по убыванию"></button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="./img/sedona/jpg/amara.jpg" alt="amara resort">
+                            <h3>Amara resort & spa</h3>
+                            <span>Гостиница</span><span> от 4000 р.</span>
+                            <button>Подробнее</button>
+                            <button>Забронировать</button>
+                        </div>
+                        <div>
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <p>Рейтинг: 8,5</p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/sedona/jpg/desert.jpg" alt="Desert Quail Inn">
+                            <h3>Desert Quail Inn</h3>
+                            <span>Мотель</span><span> от 3000 р.</span>
+                            <button>Подробнее</button>
+                            <button>Забронировать</button>
+                        </div>
+                        <div>
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <p>Рейтинг: 8,9</p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/sedona/jpg/villas.jpg" alt="Villas at Poco Diablo">
+                            <h3>Villas at Poco Diablo</h3>
+                            <span>Апартаменты</span><span> от 2000 р.</span>
+                            <button>Подробнее</button>
+                            <button>Забронировать</button>
+                        </div>
+                        <div>
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <img src="./img/sedona/svg/star.svg" alt="">
+                            <p>Рейтинг: 9,2</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="blank.html">#VISITSEDONA</a></li>
+            <li>ТЕЛ: +7(495)666-01-66</li>
+        </ul>
+        <ul>
+            <li><a href="blank.html"></a><img src="./img/sedona/svg/twitter.svg" alt="twitter"></li>
+            <li><a href="blank.html"></a><img src="./img/sedona/svg/fb-icon.svg" alt="facebook"></li>
+            <li><a href="blank.html"></a><img src="./img/sedona/svg/youtube.svg" alt="youtube"></li>
+        </ul>
+        <p>WEBSITE BY <a href="blank.html"><img src="./img/sedona/svg/logo-htmlacademy.svg" alt="LOGO html academy"></a>
+        </p>
+    </footer>
+</body>
+
+</html>
