@@ -1,0 +1,247 @@
+:root {
+  --bg-color: white;
+  --basic-color: black;
+  --basic-blue: #81b3d2;
+  --basic-grey: #eeeeee;
+  --basic-white: white;
+  --basic-dark-grey: #766357;
+  --basic-light-grey: #f2f2f2;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: capitalize;
+  background-color: var(--bg-color);
+  color: var(--basic-color);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+}
+.navbar {
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.logo {
+}
+.logo__link {
+}
+.logo__img {
+}
+.navbar__list {
+  list-style: none;
+}
+.navbar__item {
+}
+.navbar__link {
+}
+.promo {
+}
+
+.promo__title {
+  background-image: url("../img/sedona/jpg/background_photo.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo__img {
+}
+
+.promo__shape {
+  height: 56px;
+  background-image: url(../img/sedona/svg/Shape_mid_1.svg);
+}
+
+.promo__text {
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.main {
+}
+.features {
+}
+.features__header {
+  display: none;
+}
+.features__title {
+  line-height: 26px;
+}
+.features__item {
+  background-color: var(--basic-grey);
+}
+
+.features__item-column {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.features__item-subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.features__item-title {
+  font-weight: 400;
+}
+.features__item-text {
+  text-transform: uppercase;
+}
+.features__item-img {
+}
+.advises {
+}
+.advises__header {
+  display: none;
+}
+
+.advises__item {
+}
+.advises__img {
+}
+.advises__subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.advises__text {
+  text-transform: uppercase;
+}
+.search-apartment-section {
+}
+.search-apartment-section__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.search-apartment-section__text {
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.search-apartment-form {
+    background-image: url(../img/sedona/png/map.png);
+}
+.search-apartment-form__fieldset {
+    width: 568px;
+    height: 395px;
+    background-color: white;
+    border: 0;
+}
+.search-apartment-form__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.search-apartment-form__title-wrapper {
+  height: 86px;
+  width: 568px;
+  background-color: var(--basic-dark-grey);
+}
+
+.search-apartment-form__item {
+}
+.search-apartment-form__item-text {
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.search-apartment-form__item-input {
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+  border: 0;
+  width: 346px;
+  height: 38px;
+}
+.search-apartment-form__item-button {
+  border: 0;
+  cursor: pointer;
+}
+.search-apartment-form__item-img {
+}
+.search-apartment-form__item-button-minus {
+  border: 0;
+  cursor: pointer;
+}
+.search-apartment-form__item-input-num {
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+  border: 0;
+  width: 50px;
+}
+.search-apartment-form__item-button-plus {
+  border: 0;
+  cursor: pointer;
+}
+.search-apartment-form__button-submit {
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  border: 0;
+  cursor: pointer;
+}
+.footer {
+}
+.phone {
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+.phone__hashtag {
+}
+.phone__number {
+}
+.social {
+}
+
+.social__link {
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+  border: 0;
+}
+
+.developed-by {
+}
+.developed-by__text {
+  text-transform: uppercase;
+  line-height: 26px;
+}
+.developed-by__link {
+}
+.developed-by__img {
+}

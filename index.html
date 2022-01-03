@@ -5,146 +5,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sedona</title>
 </head>
 
 <body>
-    <header>
-        <section>
-            <a href=""><img src="./img/sedona/svg/logo.svg" alt="LOGO"></a>
-            <nav>
-                <ul>
-                    <li><a href="./blank.html">ИНФОРМАЦИЯ</a></li>
-                    <li><a href="./blank.html">ФОТО И ВИДЕО</a></li>
-                    <li><a href="./blank.html">КАРТА ШТАТА</a></li>
-                    <li><a href="./blank.html">ГОСТИНИЦЫ</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <img src="./img/sedona/svg/welcome.svg" alt="Welcome to SEDONA">
-            <p>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
-            <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <img class="logo__img" src="./img/sedona/svg/logo.svg" alt="logo">
+                </a>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="./blank.html">информация</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./blank.html">фото и видео</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./blank.html">карта штата</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./blank.html">гостиницы</a></li>
+            </ul>
+        </nav>
+        <section class="promo">
+            <div class="promo__title">
+                <img class="promo__img" src="./img/sedona/svg/welcome.svg" alt="Welcome to SEDONA">
+                <div class="promo__shape">
+
+                </div>
+            </div>
+
+            <p class="promo__text">Cедона - небольшой городок в аризоне,<br>заслуживающий большего!</p>
         </section>
     </header>
-    <main>
-        <section>
-            <h2>Достоинства</h2>
-            <ul>
-                <li>
-                    <h4>настоящий городок</h4>
-                    <h3>- №1 -</h3>
-                    <p>седона - не аттракцион для туристов, там<br>течет своя жизнь</p>
-                    <img src="./img/sedona/jpg/image.jpg" alt="Седона это настоящий городок">
-                </li>
-                <li>
-                    <section>
-                        <h2>Советы</h2>
-                        <ul>
-                            <li>
-                                <ul>
-                                    <li><img src="./img/sedona/svg/home.svg" alt="Жилье"></li>
-                                    <li>
-                                        <h3>Жилье</h3>
-                                    </li>
-                                    <li>
-                                        <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-                                    </li>
-
-                                    <li><img src="./img/sedona/svg/food.svg" alt="Еда"></li>
-                                    <li>
-                                        <h3>Еда</h3>
-                                    </li>
-                                    <li>
-                                        <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
-                                    </li>
-
-                                    <li><img src="./img/sedona/svg/present.svg" alt="Сувениры"></li>
-                                    <li>
-                                        <h3>Сувениры</h3>
-                                    </li>
-                                    <li>
-                                        <p>Не только китайского, но и местного<br>
-                                            производства!</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                </li>
-                <li>
-                    <img src="./img/sedona/jpg/devils_bridge.jpg" alt="Мост Дьявола">
-                    <h4>Там есть<br>мост дьявола</h4>
-                    <h3>- №2 -</h3>
-                    <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-                </li>
-                <li>
-                    <h4>небольшая<br>площадь</h4>
-                    <h3>- №3 -</h3>
-                    <p>все достопримечательности<br>находятся очень близко</p>
-                </li>
-                <li>
-                    <h4>красивая<br>дорога</h4>
-                    <h3>- №4 -</h3>
-                    <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
-                </li>
-                <li>
-                    <h4>мало<br>туристов</h4>
-                    <h3>- №5 -</h3>
-                    <p>большинство едет в гранд каньон<br>и толпится там</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-            <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-            <section>
-
-                <form>
-                    <fieldset>
-                        <legend>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
-                        <p>
-                            <label>дата заезда: <input type="text" placeholder="24 апреля 2017">
-                                <button><img src="./img/sedona/svg/calendar.svg" alt="календарь"></button>
-                            </label>
-                        </p>
-                        <p>
-                            <label>дата выезда: <input type="text" placeholder="4 июля 2017">
-                                <button><img src="./img/sedona/svg/calendar.svg" alt="календарь"></button>
-                            </label>
-                        </p>
-                        <p>
-                            <label>взрослые:
-                                <button><img src="./img/sedona/svg/minus.svg" alt="уменьшить количество"></button>
-                                <input type="number" placeholder="2">
-                                <button><img src="./img/sedona/svg/plus.svg" alt="увеличить количество"></button>
-                            </label>
-                        </p>
-                        <p>
-                            <label>дети:
-                                <button><img src="./img/sedona/svg/minus.svg" alt="уменьшить количество"></button>
-                                <input type="number" placeholder="4">
-                                <button><img src="./img/sedona/svg/plus.svg" alt="увеличить количество"></button>
-                            </label>
-                        </p>
-                        <input type="submit" value="Найти">
-                    </fieldset>
-                </form>
+    <main class="main">
+        <section class="features">
+            <h2 class="features__header">Достоинства</h2>
+            <p class="features__title">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+            <div class="features__item">
+                <div class="features__item-column">
+                    <h4 class="features__item-subtitle">Настоящий<br>городок</h4>
+                    <h3 class="features__item-title">- №1 -</h3>
+                    <p class="features__item-text">Cедона - не аттракцион для туристов, там<br>течет своя жизнь</p>
+                </div>
+                <img class="features__item-img" src="./img/sedona/jpg/image.jpg" alt="Седона это настоящий городок">
+            </div>
+            <section class="advises">
+                <h2 class="advises__header">Советы</h2>
+                <div class="advises__item">
+                    <img class="advises__img" src="./img/sedona/svg/home.svg" alt="Жилье">
+                    <h3 class="advises__subtitle">Жилье</h3>
+                    <p class="advises__text">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+                </div>
+                <div class="advises__item">
+                    <img class="advises__img" src="./img/sedona/svg/food.svg" alt="Еда">
+                    <h3 class="advises__subtitle">Еда</h3>
+                    <p class="advises__text">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                </div>
+                <div class="advises__item">
+                    <img class="advises__img" src="./img/sedona/svg/present.svg" alt="Сувениры">
+                    <h3 class="advises__subtitle">Сувениры</h3>
+                    <p class="advises__text">Не только китайского, но и местного<br>
+                        производства!</p>
+                </div>
             </section>
+            <div class="features__item">
+                <img class="features__item-img" src="./img/sedona/jpg/devils_bridge.jpg" alt="Мост Дьявола">
+                <div class="features__item-column">
+                    <h4 class="features__item-subtitle">Там есть<br>мост дьявола</h4>
+                    <h3 class="features__item-title">- №2 -</h3>
+                    <p class="features__item-text">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+                </div>
+            </div>
+            <div class="features__item">
+                <h4 class="features__item-subtitle">небольшая<br>площадь</h4>
+                <h3 class="features__item-title">- №3 -</h3>
+                <p class="features__item-text">Все достопримечательности<br>находятся очень близко</p>
+            </div>
+            <div class="features__item">
+                <h4 class="features__item-subtitle">красивая<br>дорога</h4>
+                <h3 class="features__item-title">- №4 -</h3>
+                <p class="features__item-text">Eхать в седону из лас-вегаса совсем<br>не скучно!</p>
+            </div>
+            <div class="features__item">
+                <h4 class="features__item-subtitle">мало<br>туристов</h4>
+                <h3 class="features__item-title">- №5 -</h3>
+                <p class="features__item-text">Большинство едет в гранд каньон<br>и толпится там</p>
+            </div>
+        </section>
+
+        <section class="search-apartment-section">
+            <h2 class="search-apartment-section__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+            <p class="search-apartment-section__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ
+                ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+            <form class="search-apartment-form">
+                <fieldset class="search-apartment-form__fieldset">
+                    <div class="search-apartment-form__title-wrapper">
+                        <legend class="search-apartment-form__title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
+                    </div>
+                    <div class="search-apartment-form__item">
+                        <label class="search-apartment-form__item-text">дата заезда:
+                            <input class="search-apartment-form__item-input" type="text" placeholder="24 апреля 2017">
+                            <button class="search-apartment-form__item-button">
+                                <img class="search-apartment-form__item-img" src="./img/sedona/svg/calendar.svg"
+                                    alt="календарь">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="search-apartment-form__item">
+                        <label class="search-apartment-form__item-text">дата выезда:
+                            <input class="search-apartment-form__item-input" type="text" placeholder="4 июля 2017">
+                            <button class="search-apartment-form__item-button">
+                                <img class="search-apartment-form__item-img" src="./img/sedona/svg/calendar.svg"
+                                    alt="календарь">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="search-apartment-form__item">
+                        <label class="search-apartment-form__item-text">взрослые:
+                            <button class="search-apartment-form__item-button-minus">
+                                <img class="search-apartment-form__item-img" src="./img/sedona/svg/minus.svg"
+                                    alt="уменьшить количество">
+                            </button>
+                            <input class="search-apartment-form__item-input-num" type="number" placeholder="2">
+                            <button class="search-apartment-form__item-button-plus">
+                                <img class="search-apartment-form__item-img" src="./img/sedona/svg/plus.svg"
+                                    alt="увеличить количество">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="search-apartment-form__item">
+                        <label class="search-apartment-form__item-text">дети:
+                            <button class="search-apartment-form__item-button-minus">
+                                <img class="search-apartment-form__item-img" src="./img/sedona/svg/minus.svg"
+                                    alt="уменьшить количество">
+                            </button>
+                            <input class="search-apartment-form__item-input-num" type="number" placeholder="4">
+                            <button class="search-apartment-form__item-button-plus">
+                                <img class="search-apartment-form__item-img" src="./img/sedona/svg/plus.svg"
+                                    alt="увеличить количество">
+                            </button>
+                        </label>
+                    </div>
+                    <input class="search-apartment-form__button-submit" type="submit" value="Найти">
+                </fieldset>
+            </form>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li><a href="blank.html">#VISITSEDONA</a></li>
-            <li>ТЕЛ: +7(495)666-01-66</li>
-        </ul>
-        <ul>
-            <li><a href="blank.html"></a><img src="./img/sedona/svg/twitter.svg" alt="twitter"></li>
-            <li><a href="blank.html"></a><img src="./img/sedona/svg/fb-icon.svg" alt="facebook"></li>
-            <li><a href="blank.html"></a><img src="./img/sedona/svg/youtube.svg" alt="youtube"></li>
-        </ul>
-        <p>WEBSITE BY <a href="blank.html"><img src="./img/sedona/svg/logo-htmlacademy.svg" alt="LOGO html academy"></a>
-        </p>
+    <footer class="footer">
+        <div class="phone">
+            <p class="phone__hashtag">#VISITSEDONA</p>
+            <p class="phone__number">ТЕЛ: +7(495)666-01-66</p>
+        </div>
+        <div class="social">
+            <button class="social__link" href="blank.html"><img src="./img/sedona/svg/twitter.svg" alt="twitter"></button>
+            <button class="social__link" href="blank.html"><img src="./img/sedona/svg/fb-icon.svg" alt="facebook"></button>
+            <button class="social__link" href="blank.html"><img src="./img/sedona/svg/youtube.svg" alt="youtube"></button>
+        </div>
+        <div class="developed-by">
+            <p class="developed-by__text">WEBSITE BY
+                <a class="developed-by__link" href="blank.html">
+                    <img class="developed-by__img" src="./img/sedona/svg/logo-htmlacademy.svg" alt="LOGO html academy">
+                </a>
+            </p>
+        </div>
     </footer>
 </body>
 
