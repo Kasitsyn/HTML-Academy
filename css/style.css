@@ -8,8 +8,10 @@
   --basic-light-grey: #f2f2f2;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -17,14 +19,15 @@ body {
   width: 1280px;
   min-width: 1280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 40px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-transform: capitalize;
   background-color: var(--bg-color);
   color: var(--basic-color);
-
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 a {
@@ -42,15 +45,27 @@ img {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
 }
 .logo {
+  justify-self: center;
 }
 .logo__link {
 }
 .logo__img {
 }
-.navbar__list {
+.navbar__list-left,
+.navbar__list-right {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-self: center;
+  /* justify-content: space-between; */
 }
 .navbar__item {
 }
@@ -62,9 +77,18 @@ img {
 .promo__title {
   background-image: url("../img/sedona/jpg/background_photo.jpg");
   background-repeat: no-repeat;
+  height: 509px;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  /* justify-content: space-between; */
 }
 
 .promo__img {
+  align-self: center;
+  width: 456.65px;
+  height: 350.88px;
+  display: block;
+  margin: 0 auto;
 }
 
 .promo__shape {
@@ -77,6 +101,7 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   font-size: 21px;
+  text-align: center;
 }
 .main {
 }
@@ -87,69 +112,111 @@ img {
 }
 .features__title {
   line-height: 26px;
+  text-align: center;
 }
 .features__item {
   background-color: var(--basic-grey);
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+.features__item_reverse {
+  grid-template-columns: 1fr 400px;
+}
+
+.features__other {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
 }
 
 .features__item-column {
+  padding-top: 47px;
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 
+.features__item-column-other {
+  background-color: var(--basic-grey);
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
 .features__item-subtitle {
+  margin: 0;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 21px;
+  text-align: center;
 }
 .features__item-title {
   font-weight: 400;
+  text-align: center;
 }
 .features__item-text {
   text-transform: uppercase;
+  text-align: center;
 }
 .features__item-img {
 }
+
 .advises {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .advises__header {
   display: none;
 }
 
 .advises__item {
+  padding: 60px 0;
+  justify-self: center;
 }
 .advises__img {
+  display: block;
+  margin: 0 auto;
 }
 .advises__subtitle {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 21px;
+  text-align: center;
 }
 .advises__text {
   text-transform: uppercase;
+  text-align: center;
 }
 .search-apartment-section {
 }
 .search-apartment-section__title {
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 58px;
 }
 .search-apartment-section__text {
   text-transform: uppercase;
   line-height: 24px;
+  text-align: center;
+  padding-bottom: 48px;
 }
 .search-apartment-form {
-    background-image: url(../img/sedona/png/map.png);
+  background-image: url(../img/sedona/png/map.png);
 }
 .search-apartment-form__fieldset {
-    width: 568px;
-    height: 395px;
-    background-color: white;
-    border: 0;
+  display: grid;
+  margin: 0 auto;
+  width: 568px;
+  height: 395px;
+  background-color: white;
+  border: 0;
+  padding: 0;
 }
 .search-apartment-form__title {
+  justify-self: center;
+  align-self: center;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -158,30 +225,80 @@ img {
 }
 
 .search-apartment-form__title-wrapper {
+  display: grid;
   height: 86px;
   width: 568px;
   background-color: var(--basic-dark-grey);
 }
 
+.search-apartment-form__items-wrapper {
+  justify-self: center;
+  align-self: center;
+}
+
 .search-apartment-form__item {
 }
+
+.search-apartment-form__item-label {
+  display: grid;
+  grid-template-columns: 112px 346px;
+}
+
+.search-apartment-form__item-num-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.search-apartment-form__item-label-num {
+  display: grid;
+  grid-template-columns: 112px 114px;
+  justify-self: start;
+}
+
 .search-apartment-form__item-text {
+  /* padding-right: 30px; */
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
 }
+
+.search-apartment-form__item-text_child {
+  text-align: center;
+}
+
+.search-apartment-form__item-text_parents {
+  /* margin-right: 15px; */
+}
+
+.search-apartment-form__item-label-num_child {
+  justify-content: end;
+}
+
+.search-apartment-form__item-input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  justify-content: center;
+  background-color: var(--basic-light-grey);
+  height: 38px;
+}
+
 .search-apartment-form__item-input {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  background-color: var(--basic-light-grey);
+  background: none;
   border: 0;
-  width: 346px;
-  height: 38px;
 }
+
+.search-apartment-form__item-input:focus {
+  outline: none;
+}
+
 .search-apartment-form__item-button {
   border: 0;
   cursor: pointer;
+  background-color: var(--basic-light-grey);
 }
 .search-apartment-form__item-img {
 }
@@ -197,6 +314,16 @@ img {
   border: 0;
   width: 50px;
 }
+
+.search-apartment-form__item-input-wrapper-num {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  background-color: var(--basic-light-grey);
+  justify-self: start;
+  height: 38px;
+}
+
 .search-apartment-form__item-button-plus {
   border: 0;
   cursor: pointer;
@@ -212,20 +339,33 @@ img {
   color: var(--basic-white);
   border: 0;
   cursor: pointer;
+  margin: 0 auto;
 }
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
 }
 .phone {
   font-weight: 700;
   line-height: 26px;
   font-size: 21px;
   text-transform: uppercase;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
 }
 .phone__hashtag {
+  text-align: center;
 }
 .phone__number {
 }
 .social {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4px;
 }
 
 .social__link {
@@ -236,12 +376,21 @@ img {
 }
 
 .developed-by {
+  justify-self: center;
+  align-self: center;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  
 }
 .developed-by__text {
   text-transform: uppercase;
   line-height: 26px;
+  justify-self: end;
+  padding-right: 4px;
+  align-self: center;
 }
 .developed-by__link {
+    align-self: center;
 }
 .developed-by__img {
 }
