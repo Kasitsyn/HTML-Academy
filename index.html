@@ -39,7 +39,7 @@
     </header>
     <main class="main">
         <section class="features">
-            <h2 class="features__header">Достоинства</h2>
+            <h2 class="features__header visually-hidden">Достоинства</h2>
             <p class="features__title">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
             <div class="features__item">
                 <div class="features__item-column">
@@ -50,7 +50,7 @@
                 <img class="features__item-img" src="./img/sedona/jpg/image.jpg" alt="Седона это настоящий городок">
             </div>
             <section class="advises">
-                <h2 class="advises__header">Советы</h2>
+                <h2 class="advises__header visually-hidden">Советы</h2>
                 <div class="advises__item">
                     <img class="advises__img" src="./img/sedona/svg/home.svg" alt="Жилье">
                     <h3 class="advises__subtitle">Жилье</h3>
@@ -102,7 +102,7 @@
                     ЛУЧШИЕ
                     ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
             </div>
-            <form class="search-apartment-form">
+            <form class="search-apartment-form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="search-apartment-form__fieldset">
                     <div class="search-apartment-form__title-wrapper">
                         <legend class="search-apartment-form__title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
@@ -113,7 +113,7 @@
                                 <p class="search-apartment-form__item-text">дата заезда:</p>
                                 <div class="search-apartment-form__item-input-wrapper">
                                     <input class="search-apartment-form__item-input" type="text"
-                                        placeholder="24 апреля 2017">
+                                        placeholder="24 апреля 2017" name="check-in">
                                     <button class="search-apartment-form__item-button">
                                         <img class="search-apartment-form__item-img" src="./img/sedona/svg/calendar.svg"
                                             alt="календарь">
@@ -126,7 +126,7 @@
                                 <p class="search-apartment-form__item-text">дата выезда:</p>
                                 <div class="search-apartment-form__item-input-wrapper">
                                     <input class="search-apartment-form__item-input" type="text"
-                                        placeholder="4 июля 2017">
+                                        placeholder="4 июля 2017" name="check-out">
                                     <button class="search-apartment-form__item-button">
                                         <img class="search-apartment-form__item-img" src="./img/sedona/svg/calendar.svg"
                                             alt="календарь">
@@ -146,7 +146,7 @@
                                                 src="./img/sedona/svg/minus.svg" alt="уменьшить количество">
                                         </button>
                                         <input class="search-apartment-form__item-input-num" type="number"
-                                            placeholder="2">
+                                            placeholder="2" name="ammount-of-adults">
                                         <button class="search-apartment-form__item-button-plus">
                                             <img class="search-apartment-form__item-img" src="./img/sedona/svg/plus.svg"
                                                 alt="увеличить количество">
@@ -165,7 +165,7 @@
                                                 src="./img/sedona/svg/minus.svg" alt="уменьшить количество">
                                         </button>
                                         <input class="search-apartment-form__item-input-num" type="number"
-                                            placeholder="2">
+                                            placeholder="2" name="ammount-of-kids">
                                         <button class="search-apartment-form__item-button-plus">
                                             <img class="search-apartment-form__item-img" src="./img/sedona/svg/plus.svg"
                                                 alt="увеличить количество">
