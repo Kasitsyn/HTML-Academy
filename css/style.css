@@ -57,7 +57,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
-/* =================================== */
+/* ============HEADER============= */
 
 .header {
 }
@@ -109,6 +109,8 @@ input::-webkit-inner-spin-button {
 }
 .navbar__link {
 }
+
+/* ============MAIN=============== */
 .promo {
 }
 
@@ -250,7 +252,6 @@ input::-webkit-inner-spin-button {
   margin-top: 58px;
   padding-bottom: 86px;
   background-image: url(../img/sedona/png/map.png);
-  
 }
 
 .search-apartment-section__title-wrapper {
@@ -276,7 +277,6 @@ input::-webkit-inner-spin-button {
   padding-bottom: 40px;
 }
 .search-apartment-form {
-  
 }
 .search-apartment-form__fieldset {
   display: grid;
@@ -415,7 +415,7 @@ input::-webkit-inner-spin-button {
 }
 .search-apartment-form__button-submit {
   width: 458px;
-  
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -428,6 +428,9 @@ input::-webkit-inner-spin-button {
   margin-top: 31px;
   padding: 16px 0;
 }
+
+/* ============FOOTER=============== */
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -480,7 +483,6 @@ input::-webkit-inner-spin-button {
   grid-template-columns: 1fr 1fr;
   margin-top: 38px;
   margin-right: 138px;
-  
 }
 .developed-by__text {
   text-transform: uppercase;
@@ -494,5 +496,4 @@ input::-webkit-inner-spin-button {
 }
 .developed-by__img {
   opacity: 0.3;
-  
 }
